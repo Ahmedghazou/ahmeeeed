@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Questionnaire QCM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Questionnaire QCM sur le football</h1>
+    <form id="quizForm">
+        <div class="question">
+                <p>1. Quelle équipe a remporté la Coupe du Monde 2018 ?</p>
+                <div class="options">
+                    <label>
+                        <input type="radio" name="q1" value="a"> a) France
+                    </label>
+                    <label>
+                        <input type="radio" name="q1" value="b"> b) Brésil
+                    </label>
+                    <label>
+                        <input type="radio" name="q1" value="c"> c) Allemagne
+                    </label>
+                </div>
+            </div>
+            
+            <div class="question">
+                <p>2. Quel joueur a remporté le Ballon d'Or 2020 ?</p>
+                <div class="options">
+                    <label>
+                        <input type="radio" name="q2" value="a"> a) Lionel Messi
+                    </label>
+                    <label>
+                        <input type="radio" name="q2" value="b"> b) Cristiano Ronaldo
+                    </label>
+                    <label>
+                        <input type="radio" name="q2" value="c"> c) Neymar
+                    </label>
+                </div>
+            </div>
+            
+            <div class="question">
+                <p>3. Quel joueur a la meilleur carte sur EA FC24 ?</p>
+                <div class="options">
+                    <label>
+                        <input type="radio" name="q3" value="a"> a) Van djick
+                    </label>
+                    <label>
+                        <input type="radio" name="q3" value="b"> b) Cristiano Ronaldo
+                    </label>
+                    <label>
+                        <input type="radio" name="q3" value="c"> c) Mbappé
+                    </label>
+                </div>
+            </div>
+            
+            
+    </div>
+   <div class="question">
+                <p>4. Quelle équipe a remporté la Can 2019 ?</p>
+                <div class="options">
+                    <label>
+                        <input type="radio" name="q1" value="a"> a) Senégale
+                    </label>
+                    <label>
+                        <input type="radio" name="q1" value="b"> b) Maroc
+                    </label>
+                    <label>
+                        <input type="radio" name="q1" value="c"> c)  Algerie
+                    </label>
+                </div>
+            </div>
+   <div class="question">
+                <p>5. Quelle équipe a remporté la LDC 2018 ?</p>
+                <div class="options">
+                    <label>
+                        <input type="radio" name="q5" value="a"> a) Real Madrid 
+                    </label>
+                    <label>
+                        <input type="radio" name="q5" value="b"> b) Chelsea
+                    </label>
+                    <label>
+                        <input type="radio" name="q6" value="c"> c) l'etoile rouge de belgrade
+                    </label>
+                </div>
+            </div>
+   <div class="question">
+                <p>6. Quelle équipe a remporté l'euro 2002?</p>
+                <div class="options">
+                    <label>
+                        <input type="radio" name="q6" value="a"> a) France
+                    </label>
+                    <label>
+                        <input type="radio" name="q6" value="b"> b) Portugale
+                    </label>
+                    <label>
+                        <input type="radio" name="q6" value="c"> c) Grêce 
+                    </label>
+                </div>
+            </div>
+
+               <div class="question">
+                <p>7. Quelle équipe a remporté la Coupe du Monde 2006 ?</p>
+                <div class="options">
+                    <label>
+                        <input type="radio" name="q7" value="a"> a) France
+                    </label>
+                    <label>
+                        <input type="radio" name="q7" value="b"> b) Brésil
+                    </label>
+                    <label>
+                        <input type="radio" name="q7" value="c"> c) Italie
+                    </label>
+                </div>
+            </div>
+               <div class="question">
+                <p>8. Quelle équipe a Finit meilluer buteur de la Coupe du Monde 2022 ?</p>
+                <div class="options">
+                    <label>
+                        <input type="radio" name="q8" value="a"> a) Mbappé 
+                    </label>
+                    <label>
+                        <input type="radio" name="q8" value="b"> b) Messi 
+                    </label>
+                    <label>
+                        <input type="radio" name="q8" value="c"> c) Harry Kane
+                    </label>
+                </div>
+            </div>
+             <div class="question">
+                <p>9. À quelles distance se tient le mur lors d'un coup franc ?</p>
+                <div class="options">
+                    <label>
+                        <input type="radio" name="q9" value="a"> a) 7,50
+                    </label>
+                    <label>
+                        <input type="radio" name="q9" value="b"> b) 9,50 
+                    </label>
+                    <label>
+                        <input type="radio" name="q9" value="c"> c) 8,75
+                    </label>
+                </div>
+            </div>
+             <div class="question">
+                <p>10. Ou le football a était inventé ?</p>
+                <div class="options">
+                    <label>
+                        <input type="radio" name="q10" value="a"> a) Anglettere  
+                    </label>
+                    <label>
+                        <input type="radio" name="q10" value="b"> b) France  
+                    </label>
+                    <label>
+                        <input type="radio" name="q10" value="c"> c) Etat-unis
+                    </label>
+                </div>
+            </div>
+
+
+
+
+
+        <button type="button" id="clearButton">Effacer les sélections</button>
+        <button type="button" id="showCorrectButton">Afficher le corrigé</button>
+        <button type="button" id="checkAnswersButton">Correction Dynamique</button>
+    </form>
+
+
+
+<button type="submit" id="submit-button">Soumettre</button>
+        </form>
+        <div id="result"></div>
+
+<script>
+        document.getElementById('quizForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            let score = 8;
+            const answers = ['a', 'a', 'c','c','a','c','c','a',"b", "a" /* Réponses pour les questions 1 2 3 4  5 6 7 8 9 10*/];
+
+            for (let i = 1; i = 2; i = 3 i = 4 i = 5 i = 6 i = 7 i = 8 i = 9 i = 10) { /* Remplacez le 2 par 10 pour les 10 questions */
+                const selectedOption = document.querySelector(`input[name="q${i}"]:checked`);
+                if (selectedOption) {
+                    if (selectedOption.value === answers[i - 1][i - 2] [i - 3] [i - 4] [i - 5][i - 6][i - 7][i - 8]) {
+                        score++;
+                    }
+                }
+            }
+
+            const resultDiv = document.getElementById('result');
+            resultDiv.textContent = `Votre score : ${score} / 10`; /* Remplacez le 2 par 10 pour les 10 questions */
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
